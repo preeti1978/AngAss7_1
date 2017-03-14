@@ -1,0 +1,19 @@
+<table border="1">
+<tr>
+<th>Name</th><th>Age</th><th>Profession</th>
+</tr>
+<tr *ngFor="let user of userList">
+<td *ngIf="Number(user.age)>27">{{user.name}}</td>
+<td *ngIf="Number(user.age)>27">{{user.age}}</td>
+<td *ngIf="Number(user.age)>27">{{user.profession}}</td>
+</tr>
+</table>
+
+<!--Add one DIV element with 5 different SPAN element, and all span element should have different text content. Change color of text of third SPAN element using Attribute directive-->
+<div>
+	<span>text1</span>
+	<span>text2</span>
+	<span [ngClass]="'yellow-color'">text3</span>
+	<span>text4</span>
+	<span>text5</span>
+</div>
